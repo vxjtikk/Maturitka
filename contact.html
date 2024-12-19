@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Kontaktní informace</title>
+</head>
+<body class="contact-page">
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="index.html" class="logo"><img src="/img/Bez ná1zvu-1 (1) (1).png" alt="Logo"></a>
+  <div class="nav-links">
+      <a href="about.html">O nás</a>
+      <a href="historie.html">Historie firmy</a>
+      <a href="work.html">Práce</a>
+      <a href="pricing.html">Ceník</a>
+      <a href="contact.html">Kontakt</a>
+  </div>
+</div>
+
+<!-- Hlavní obsah -->
+<main class="content">
+    
+    <!-- Sekce kontaktních informací -->
+    <section class="contact-info">
+        <h1>Kontaktní informace</h1>
+        <table class="contact-table">
+            <thead>
+                <tr>
+                    <th>Typ kontaktu</th>
+                    <th>Informace</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Adresa</td>
+                    <td>Lesnická 123, 100 00 Praha</td>
+                </tr>
+                <tr>
+                    <td>Telefon</td>
+                    <td>+420 123 456 789</td>
+                </tr>
+                <tr>
+                    <td>E-mail</td>
+                    <td>info@lesnickafirma.cz</td>
+                </tr>
+                <tr>
+                    <td>Pracovní doba</td>
+                    <td>Pondělí - Pátek, 8:00 - 17:00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <!-- Sekce formuláře o provedení práce -->
+    <section class="work-form">
+        <h1>O jakou prácí žádáte</h1>
+        <form action="#" method="post">
+            <label for="name">Jméno a příjmení:</label>
+            <input type="text" id="name" name="name" placeholder="Vaše jméno a příjmení" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Váš e-mail" required>
+
+            <label for="phone">Telefon:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Váš telefon" required>
+
+            <label for="work-type">Typ práce:</label>
+            <select id="work-type" name="work-type" required>
+                <option value="tezeni">Těžba dřeva</option>
+                <option value="vysadba">Výsadba stromů</option>
+                <option value="prozrezavky">Prořezávky</option>
+                <option value="vyzinani">Vyžínání</option>
+            </select>
+            <p></p>
+            <label for="message">Podrobnosti o práci:</label>
+            <textarea id="message" name="message" rows="5" placeholder="Zadejte podrobnosti o požadované práci..." required></textarea>
+
+            <button type="submit" class="submit-button">Odeslat formulář</button>
+        </form>
+    </section>
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+    <a href="#top" class="button">Začátek</a>
+    <p>Toto je pouze maturitní práce</p>
+</footer>
+
+</body>
+</html>
